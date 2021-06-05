@@ -1,11 +1,11 @@
 // Iteration 1: Names and Input
 
-//Driver's name
-const hacker1 = "Manuel";
+
+const hacker1 = "Manuel"; //Driver's name
 console.log(`The driver's name is ${hacker1}.`);
 
-//Navigator's name
-const hacker2 = "Maria";
+
+const hacker2 = "Maria"; //Navigator's name
 console.log(`The navigator's name is ${hacker2}.`);
 
 // Iteration 2: Conditionals
@@ -28,3 +28,15 @@ if (driverNameLength > navigatorNameLength) {
 }
 
 // Iteration 3: Loops
+
+//Capitalized and space between characters for driver 
+capitalizedSpacedDriverName = '';
+
+for (let i = 0; i < driverNameLength; i++) {
+  capitalizedSpacedDriverName += hacker1[i].toUpperCase() + ' ';
+}
+console.log(capitalizedSpacedDriverName)
+
+//Navigator's name in reverse order
+
+reverseName = '';
