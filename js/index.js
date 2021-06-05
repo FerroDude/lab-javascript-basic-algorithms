@@ -40,3 +40,12 @@ console.log(capitalizedSpacedDriverName)
 //Navigator's name in reverse order
 
 reverseName = '';
+
+lastIndex = hacker2.length - 1;
+
+for (let i = lastIndex; i >= 0; i--) {
+  reverseName += hacker2[i];
+}
+
+console.log(reverseName)
+
