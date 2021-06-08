@@ -73,8 +73,9 @@ for (let i = 0; i < randomText.length; i++) {
 console.log(wordCount) //Outputs number of word in randomText
 
 
+//the idea behind this function was: 1 - Find an "e"; 2 - check if the character before the "e" was and empty space or a dot so it wouldn't be in the middle of another word; 3 - check if the character after the "e" was a "t"; 4 - check if the character after the "t" was an empty space or a dot so it would be the start of another word
 function etWordCount(str) {
-    counter = 0;
+    let counter = 0;
     for (let i = 0; i < str.length; i++) {
       if (str[i] === "e" && (str[i - 1] === " " || str[i - 1] === ".") && str[i + 1] === "t" && (str[i + 2] === " " || str[i + 2] === ".")) {
         counter += 1;
@@ -85,6 +86,8 @@ function etWordCount(str) {
    
    etWordCount(randomText) //outputs number of times the word et appears in the given string
 
+
+//Bonus 2 
 
 
 
